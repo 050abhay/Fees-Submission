@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #welcome-text {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  #buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button {
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+
+.button:hover {
+    color: #FF9950;
+}
+
+
+
+.button:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 20, 300;
+    stroke-dashoffset: 48;
+    stroke: #FF9950;
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
